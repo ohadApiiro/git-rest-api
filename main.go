@@ -29,7 +29,20 @@ func getUser() UserAdmin {
 //    fmt.Fprintf(w, "Welcome home!")
 //}
 
+func max(num1, num2 int) int {
+
+	var result int
+
+	if num1 > num2 {
+		result = num1
+	} else {
+		result = num2
+	}
+	return result
+}
+
 func main() {
+	max(1, 2)
 	fmt.Println("a")
-	go_lib.func_in_lib()
+
 }
